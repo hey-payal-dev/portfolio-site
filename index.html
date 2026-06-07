@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal | Java Developer &amp; API Integration Specialist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Payal<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Payal</h1>
+            <h2 class="hero-title">Java Developer &amp; API Integration Specialist</h2>
+            <p class="hero-desc">I build robust backend systems, integrate third-party APIs, and create AI-powered solutions using Java, Spring Boot, and modern cloud tools. Based in Bangalore, available for freelance projects worldwide.</p>
+            <div class="hero-actions">
+                <a href="#work" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a software developer specializing in <strong>API integration</strong> and <strong>automation</strong>. I help businesses connect their tools, automate workflows, and leverage AI to work smarter.</p>
+                    <p>My core stack is <strong>Java / Spring Boot</strong>, and I bring experience across the full development lifecycle — from architecture and development to deployment and monitoring.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>REST APIs</span>
+                            <span>Maven</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Integration</h3>
+                        <div class="skill-tags">
+                            <span>Claude API</span>
+                            <span>Payment Gateways</span>
+                            <span>Webhooks</span>
+                            <span>OAuth</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>Render</span>
+                            <span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <p class="section-subtitle">Projects organized by specialization</p>
+
+            <!-- Category Tabs -->
+            <div class="work-tabs">
+                <button class="work-tab active" onclick="filterProjects('ai')">AI Integration</button>
+                <button class="work-tab" onclick="filterProjects('fullstack')">Full Stack</button>
+                <button class="work-tab" onclick="filterProjects('lowcode')">Low Code / No Code</button>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="projects-grid">
+
+                <!-- AI Integration Projects -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-badge">Live</div>
+                    <h3 class="project-title">AI Integration Service</h3>
+                    <p class="project-desc">A Spring Boot REST API powered by Claude AI with two features: document summarization and professional email draft generation. Includes a polished web UI with dark theme.</p>
+                    <div class="project-tech">
+                        <span>Java 17</span>
+                        <span>Spring Boot</span>
+                        <span>Claude API</span>
+                        <span>Thymeleaf</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ai-integration-service.onrender.com/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+                        <a href="https://github.com/hey-payal-dev/ai-integration-service" target="_blank" class="btn btn-sm btn-outline">Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Full Stack Placeholder -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-badge coming-soon">Coming Soon</div>
+                    <h3 class="project-title">Payment Gateway Integration</h3>
+                    <p class="project-desc">Spring Boot application with Razorpay API integration — order creation, payment processing, webhook verification, and refund handling.</p>
+                    <div class="project-tech">
+                        <span>Java 17</span>
+                        <span>Spring Boot</span>
+                        <span>Razorpay API</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="btn btn-sm btn-disabled">In Development</span>
+                    </div>
+                </div>
+
+                <!-- Low Code / No Code Placeholder -->
+                <div class="project-card" data-category="lowcode">
+                    <div class="project-badge coming-soon">Coming Soon</div>
+                    <h3 class="project-title">CRM Automation Workflow</h3>
+                    <p class="project-desc">Automated data sync between Google Sheets and HubSpot/Notion with scheduled jobs, error handling, and monitoring dashboard.</p>
+                    <div class="project-tech">
+                        <span>Zapier</span>
+                        <span>Google Sheets API</span>
+                        <span>HubSpot</span>
+                        <span>Webhooks</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="btn btn-sm btn-disabled">In Development</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-desc">Have a project in mind? I'm available for freelance work in API integration, backend development, and AI-powered solutions.</p>
+            <div class="contact-links">
+                <a href="mailto:heypayal.dev@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://github.com/hey-payal-dev" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Payal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
